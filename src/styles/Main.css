@@ -1,0 +1,72 @@
+
+
+.App{
+  --HueRed: rgb(172, 50, 50);
+  --HueGreen: rgb(159, 223, 80);
+  --HueBlue: rgb(91, 110, 225);
+  --main: rgb(0, 0, 0);
+  --accent: rgb(10, 10, 10);
+  --text: rgb(232, 232, 232);
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  background-color: var(--main);
+  min-height: 100vh;
+  position: relative;
+  font-size: calc(4px + 2vmin);
+  cursor: url('../assets/Cursor.png'), auto;
+}
+
+a, button, [role="button"], [onclick], .clickable {
+  cursor: url('../assets/Cursor.png'), pointer; /* Fallback to pointer */
+}
+
+@keyframes moveLines {
+  100% { background-position: 0% 30%; }
+}
+
+@keyframes glitch {
+  100%, 0.2% { opacity: 0.4; }
+}
+
+@keyframes blip {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.Hue-Logo {
+  height: 150px;
+  pointer-events: none;
+}
+
+.Header {
+  background-color: var(--main);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+/* CRT Screen Lines Effect */
+.App::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 1px,
+    rgba(255, 0, 0, .225) 10px,
+    rgba(0, 255, 0, .225) 10px,
+    rgba(0, 0, 255, .225) 10px,
+    rgba(255, 255, 255, 0.06) 20px
+  );
+  pointer-events: none;
+  z-index: 1;
+  animation: moveLines 1s linear infinite, glitch 1s linear infinite;
+  background-size: 100% 20px; /* Adjust the size of the lines */
+}
+

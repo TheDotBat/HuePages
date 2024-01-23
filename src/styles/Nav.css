@@ -1,0 +1,45 @@
+.Nav {
+
+  background-color: var(--accent);
+  padding: 1px;
+  border-top: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+  color: var(--text);
+  transition: all 0.8s ease; /* Smooth transition for hover effect */
+  padding-left: 0px;
+  border-radius: 10px;
+}
+
+.Nav-Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav ul, .Nav-Shields ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.Nav li, .Nav-Shields li {
+  margin-right: 20px;
+}
+
+.Nav li:last-child, .Nav-Shields li:last-child {
+  margin-right: 0;
+}
+
+.Nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.Nav:hover {
+  transform: scale(.99); /* Slightly enlarge on hover */
+}
+
+.Nav li:hover {
+  border-bottom: 3px dotted rgb(255, 255, 255);
+}

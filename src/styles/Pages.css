@@ -1,0 +1,10 @@
+.Home-Page, .Docs-Page {
+    background-color: var(--main);
+    color: var(--text);
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
