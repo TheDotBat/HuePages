@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import marked from 'marked';
-import '../styles/Pages.css';
+import React, { useState, useEffect } from "react";
+import { marked } from "marked";
+import "../styles/Pages.css";
 
 // export default function Docs() {
 //   return (
@@ -21,12 +21,14 @@ import '../styles/Pages.css';
 // }
 
 export default function Docs() {
-  const [markdown, setMarkdown] = useState('');
+  const [markdown, setMarkdown] = useState("");
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/TheDotBat/HueEngine/master/docs/Welcome-To-Hue-Engine.md')
-      .then(response => response.text())
-      .then(text => setMarkdown(marked(text)));
+    fetch(
+      "https://raw.githubusercontent.com/TheDotBat/HueEngine/master/docs/Welcome-To-Hue-Engine.md"
+    )
+      .then((response) => response.text())
+      .then((text) => setMarkdown(marked(text)));
   }, []);
 
   return (
@@ -36,4 +38,3 @@ export default function Docs() {
     </div>
   );
 }
-
