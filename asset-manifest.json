@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/HuePages/static/css/main.c1733d10.css",
-    "main.js": "/HuePages/static/js/main.07f0f855.js",
+    "main.js": "/HuePages/static/js/main.3dfca55e.js",
     "index.html": "/HuePages/index.html",
     "main.c1733d10.css.map": "/HuePages/static/css/main.c1733d10.css.map",
-    "main.07f0f855.js.map": "/HuePages/static/js/main.07f0f855.js.map"
+    "main.3dfca55e.js.map": "/HuePages/static/js/main.3dfca55e.js.map"
   },
   "entrypoints": [
     "static/css/main.c1733d10.css",
-    "static/js/main.07f0f855.js"
+    "static/js/main.3dfca55e.js"
   ]
 }
