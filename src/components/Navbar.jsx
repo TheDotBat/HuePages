@@ -42,7 +42,7 @@ export default function NavBar() {
             </li>
             <li>
               <a
-                href="https://github.com/TheDotBat/HueEngine"
+                href="https://discord.gg/gFDBnJQSvz"
                 target="_blank"
                 rel="noopener noreferrer"
               >
