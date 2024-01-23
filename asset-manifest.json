@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Hue/static/css/main.c1733d10.css",
+    "main.js": "/Hue/static/js/main.c8dd23e3.js",
+    "index.html": "/Hue/index.html",
+    "main.c1733d10.css.map": "/Hue/static/css/main.c1733d10.css.map",
+    "main.c8dd23e3.js.map": "/Hue/static/js/main.c8dd23e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1733d10.css",
+    "static/js/main.c8dd23e3.js"
+  ]
+}
